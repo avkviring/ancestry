@@ -1,0 +1,129 @@
+.details {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+
+  width: 364px;
+
+  padding: 40px 8px 40px 40px;
+
+  background: #ffffff;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+
+  overflow: auto;
+
+  @media screen and (max-width: 650px) {
+    position: static;
+    width: auto;
+    height: 100%;
+
+    box-shadow: none;
+    overflow: scroll;
+    padding: 0 7px 0px 40px;
+  }
+
+  &__container {
+    height: 100%;
+    overflow: auto;
+
+    padding: 0 32px 0px 0;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+      margin-right: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #d9d9d9;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #979797;
+    }
+  }
+
+  &__name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #7689ce;
+    margin-bottom: 2px;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  &__place {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+
+  &__date {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #595959;
+    margin-bottom: 15px;
+  }
+}
+
+.member {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  gap: 20px;
+  align-items: center;
+  margin: 10px 0;
+  cursor: pointer;
+
+  &__img {
+    width: 75px;
+    height: 75px;
+    border: 1px solid #7689ce;
+    padding: 4px;
+    border-radius: 50%;
+
+    background: url("../../icons/standart-male.svg") center center no-repeat;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    &_name {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 14px;
+      color: #7689ce;
+      margin-bottom: 2px;
+    }
+
+    &_date {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 12px;
+      color: #595959;
+    }
+  }
+
+  &.female {
+    .member__img {
+      border: 1px solid #ffcbcb;
+
+      background: url("../../icons/standart-female.svg") center center no-repeat;
+    }
+  }
+}

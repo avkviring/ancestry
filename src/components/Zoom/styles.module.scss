@@ -1,0 +1,44 @@
+.tools {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  background: #ffffff;
+  border: 1px solid #b6b9bf;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 32px;
+  height: 72px;
+  z-index: 10;
+
+  @media screen and (max-width: 1023px) {
+    left: 20px;
+  }
+
+  @media only screen and (hover: none) and (pointer: coarse) and (max-width: 768px) {
+    display: none;
+  }
+
+  &_item {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    height: 50%;
+    cursor: pointer;
+  }
+
+  &_zoom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(100% + 10px);
+    font-family: "Akshar";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    color: #979797;
+  }
+}

@@ -1,0 +1,220 @@
+[
+  {
+    "id": "user1",
+    "gender": "male",
+    "name": "Donatelo",
+    "img": "https://picsum.photos/200/200",
+    "birthday": "01.02.2003",
+    "placebirth": "Boston",
+    "surname": "Rodriges",
+    "photos": [
+      {
+        "description": "Maternity hospital",
+        "persons": ["user1", "user2"],
+        "image": "https://picsum.photos/200/200",
+        "backSideImg": "https://picsum.photos/200/200",
+        "date": "01.02.2003",
+        "place": "Boston"
+      }
+    ],
+    "documents": [
+      {
+        "type": "pdf",
+        "description": "Birth certificate",
+        "persons": ["user1", "user2"],
+        "image": "https://picsum.photos/200/200"
+      }
+    ],
+    "parents": [
+      {
+        "id": "user5",
+        "type": "blood"
+      },
+      {
+        "id": "user6",
+        "type": "blood"
+      }
+    ],
+    "siblings": [
+      {
+        "id": "user4",
+        "type": "blood"
+      }
+    ],
+    "spouses": [],
+    "children": [
+      {
+        "id": "user3",
+        "type": "blood"
+      }
+    ]
+  },
+  {
+    "id": "user2",
+    "gender": "female",
+    "name": "Safia",
+    "img": "https://picsum.photos/200/300",
+    "birthday": "10.12.1960",
+    "placebirth": "Moscow",
+    "deathplace": "Moscow",
+    "deathday": "31.01.2003",
+    "surnameBefore": ["Ivanova"],
+    "surname": "Rodriges",
+    "photos": [
+      {
+        "description": "Beach",
+        "persons": ["user5", "user2"],
+        "image": "https://picsum.photos/200/200",
+        "backSideImg": "https://picsum.photos/200/200",
+        "date": "10.12.1972",
+        "place": "Moscow"
+      },
+      {
+        "description": "Mars",
+        "persons": ["user6", "user2"],
+        "image": "https://picsum.photos/200/200",
+        "backSideImg": "https://picsum.photos/200/200",
+        "date": "11.12.1975",
+        "place": "Moscow"
+      }
+    ],
+    "documents": [
+      {
+        "type": "pdf",
+        "description": "Death certificate",
+        "persons": ["user2"],
+        "image": "https://picsum.photos/200/200"
+      }
+    ],
+    "parents": [],
+    "siblings": [],
+    "spouses": [
+      {
+        "id": "user5",
+        "type": "married"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "user3",
+    "gender": "male",
+    "name": "Oleg",
+    "img": "https://picsum.photos/200/300",
+    "birthday": "07.09.2022",
+    "placebirth": "New York",
+    "surname": "Rodriges",
+    "documents": [
+      {
+        "type": "pdf",
+        "description": "Birth certificate",
+        "persons": ["user1", "user3"],
+        "image": "https://picsum.photos/200/200"
+      }
+    ],
+    "parents": [
+      {
+        "id": "user1",
+        "type": "blood"
+      }
+    ],
+    "siblings": [],
+    "spouses": [],
+    "children": []
+  },
+  {
+    "id": "user4",
+    "gender": "female",
+    "name": "Leonarda",
+    "img": "https://picsum.photos/200/200",
+    "birthday": "01.02.2003",
+    "surname": "Rodriges",
+    "parents": [
+      {
+        "id": "user5",
+        "type": "blood"
+      },
+      {
+        "id": "user6",
+        "type": "blood"
+      }
+    ],
+    "siblings": [
+      {
+        "id": "user1",
+        "type": "blood"
+      }
+    ],
+    "spouses": [],
+    "children": []
+  },
+  {
+    "id": "user5",
+    "gender": "male",
+    "name": "Nikita",
+    "img": "https://picsum.photos/200/200",
+    "birthday": "10.12.1970",
+    "placebirth": "Chelyabinsk",
+    "surname": "Rodriges",
+    "photos": [
+      {
+        "description": "High school graduation",
+        "persons": ["user5", "user2"],
+        "image": "https://picsum.photos/200/200",
+        "backSideImg": "https://picsum.photos/200/200",
+        "date": "10.06.1988",
+        "place": "School"
+      }
+    ],
+    "parents": [],
+    "siblings": [],
+    "spouses": [
+      {
+        "id": "user6",
+        "type": "divorced"
+      },
+      {
+        "id": "user2",
+        "type": "married"
+      }
+    ],
+    "children": [
+      {
+        "id": "user1",
+        "type": "blood"
+      },
+      {
+        "id": "user4",
+        "type": "blood"
+      }
+    ]
+  },
+  {
+    "id": "user6",
+    "gender": "female",
+    "name": "Svetlana",
+    "img": "https://picsum.photos/200/300",
+    "birthday": "10.12.1965",
+    "placebirth": "Chelyabinsk",
+    "surnameBefore": ["Petrova", "Rodriges"],
+    "surname": "Aleskandrova",
+    "parents": [],
+    "siblings": [],
+    "spouses": [
+      {
+        "id": "user5",
+        "type": "divorced"
+      }
+    ],
+    "children": [
+      {
+        "id": "user1",
+        "type": "blood"
+      },
+      {
+        "id": "user4",
+        "type": "blood"
+      }
+    ]
+  }
+]

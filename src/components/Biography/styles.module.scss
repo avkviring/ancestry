@@ -1,0 +1,27 @@
+.details {
+    &__biography {
+        margin-bottom: 25px;
+    
+        &_text {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          color: #585858;
+          margin-bottom: 10px;
+          max-height: 110px;
+          overflow: hidden;
+          transition: all 0.4s;
+        }
+    
+        &_more {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          text-decoration-line: underline;
+          color: #979797;
+          cursor: pointer;
+        }
+    }
+}

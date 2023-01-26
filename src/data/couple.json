@@ -1,0 +1,62 @@
+[
+  {
+    "id": "jsyRsE5sr",
+    "gender": "male",
+    "name": "leonardo",
+    "img": "https://picsum.photos/200/300",
+    "birthday": "10.12.1970",
+    "placebirth": "new york",
+    "deathplace": "alabama",
+    "deathday": "11.12.1970",
+    "surnameBefore": ["dicaprio", "hoffsteder"],
+    "surname": "da vinci",
+    "photos": [
+      {
+        "description": "zhyl da byl",
+        "persons": ["ne leonardo", "ego babushka"],
+        "image": "https://picsum.photos/200/200",
+        "backSideImg": "https://picsum.photos/200/200",
+        "date": "10.12.1970",
+        "place": "new york, some street 1"
+      },
+      {
+        "description": "zhyl da byl",
+        "persons": ["dedushka", "i ego vnuki"],
+        "image": "https://picsum.photos/200/200",
+        "backSideImg": "https://picsum.photos/200/200",
+        "date": "11.12.1970",
+        "place": "alabama, lenin street"
+      }
+    ],
+    "documents": [
+      {
+        "type": "pdf",
+        "description": "some opisanie",
+        "persons": ["mother", "father"],
+        "image": "https://picsum.photos/200/200"
+      }
+    ],
+    "parents": [],
+    "siblings": [],
+    "spouses": [
+      {
+        "id": "pdRwdtR54",
+        "type": "married"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "pdRwdtR54",
+    "gender": "female",
+    "parents": [],
+    "siblings": [],
+    "spouses": [
+      {
+        "id": "jsyRsE5sr",
+        "type": "married"
+      }
+    ],
+    "children": []
+  }
+]

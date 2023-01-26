@@ -1,0 +1,132 @@
+.person {
+  border: 1px solid #7689ce;
+  padding: 4px;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  background-color: #f3f9ff;
+  cursor: pointer;
+
+  // Для отключения выделения на android
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+
+  &__wrapper {
+    position: absolute;
+    display: flex;
+    padding: 50px 30px;
+    z-index: 10;
+
+    &.active {
+      .person {
+        box-shadow: 0px 0px 4px 2px rgba(118, 137, 206, 0.5);
+
+        &.female {
+          box-shadow: 0px 0px 4px 2px rgba(255, 203, 203, 0.5);
+        }
+      }
+    }
+
+    &.highlighted {
+      .person {
+        &::before {
+          content: url("../../icons/selected.svg");
+          position: absolute;
+          width: 18px;
+          height: 18px;
+          top: 50px;
+          right: 30px;
+          transform: translate(50%, -50%);
+          filter: invert(55%) sepia(70%) saturate(297%) hue-rotate(189deg)
+            brightness(87%) contrast(88%);
+        }
+
+        &.female {
+          &::before {
+            filter: invert(80%) sepia(8%) saturate(2749%) hue-rotate(308deg)
+              brightness(117%) contrast(113%);
+          }
+        }
+      }
+    }
+  }
+
+  &.female {
+    border: 1px solid #ffcbcb;
+
+    .person__img {
+      background: url("../../icons/standart-female.svg") center center no-repeat;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url("../../icons/standart-male.svg") center center no-repeat;
+    // background-position: calc(100% + 8px);
+    background-position: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    top: 125px;
+    left: 30px;
+    right: 30px;
+    text-align: center;
+    background: #f3f9ff;
+    padding: 5px;
+    z-index: -1;
+
+    &_date {
+      font-family: "Akshar";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 12px;
+      text-align: center;
+      color: #595959;
+      margin-bottom: 5px;
+    }
+
+    &_name {
+      font-family: "Akshar";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 12px;
+      text-align: center;
+      color: #595959;
+    }
+  }
+}
+
+.expand {
+  position: absolute;
+  top: 41px;
+  left: 20px;
+  width: 18px;
+  height: 18px;
+  background: url("../../icons/expand.svg") center center no-repeat;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  filter: invert(55%) sepia(70%) saturate(297%) hue-rotate(189deg)
+    brightness(87%) contrast(88%);
+
+  &.female {
+    filter: invert(80%) sepia(8%) saturate(2749%) hue-rotate(308deg)
+      brightness(117%) contrast(113%);
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
